@@ -10,6 +10,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      user.hasOne(models.business);
+      user.hasMany(models.comment);
+      user.hasMany(models.rating);
+      user.hasMany(models.userattendance);
     }
   }
   user.init(
@@ -23,9 +27,16 @@ module.exports = (sequelize, DataTypes) => {
         unique: true,
         allowNull: false,
       },
+      imageUrl: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
       password: {
         type: DataTypes.STRING,
         allowNull: false,
+      },
+      isBusiness: {
+        type: DataTypes.BOOLEAN,
       },
     },
     {

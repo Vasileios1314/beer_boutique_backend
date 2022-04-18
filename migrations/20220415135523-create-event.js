@@ -1,32 +1,49 @@
 "use strict";
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable("users", {
+    await queryInterface.createTable("events", {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      name: {
+      title: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      email: {
-        type: Sequelize.STRING,
-        unique: true,
+      description: {
+        type: Sequelize.STRING(1000),
         allowNull: false,
       },
       imageUrl: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      password: {
+      start_date: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      end_date: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      capacity: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      location: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      isBusiness: {
-        type: Sequelize.BOOLEAN,
+      business_id: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: "businesses",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "SET NULL",
       },
       createdAt: {
         allowNull: false,
@@ -39,6 +56,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable("users");
+    await queryInterface.dropTable("events");
   },
 };
