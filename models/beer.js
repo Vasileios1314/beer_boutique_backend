@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
       description: { type: DataTypes.STRING(1000), allowNull: false },
       imageUrl: { type: DataTypes.STRING, allowNull: false },
       businessId: DataTypes.INTEGER,
-      category_id: DataTypes.INTEGER,
+      categoryId: DataTypes.INTEGER,
       alcohoolRate: { type: DataTypes.INTEGER, allowNull: false },
       size: { type: DataTypes.INTEGER, allowNull: false },
       country: { type: DataTypes.STRING, allowNull: false },

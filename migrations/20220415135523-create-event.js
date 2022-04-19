@@ -36,7 +36,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      business_id: {
+      businessId: {
         type: Sequelize.INTEGER,
         references: {
           model: "businesses",

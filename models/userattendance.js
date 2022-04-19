@@ -9,16 +9,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      userattendance.hasOne(models.event);
-      userattendance.hasOne(models.user);
       userattendance.belongsTo(models.user);
       userattendance.belongsTo(models.event);
     }
   }
   userattendance.init(
     {
-      user_id: DataTypes.INTEGER,
-      event_id: DataTypes.INTEGER,
+      userId: DataTypes.INTEGER,
+      eventId: DataTypes.INTEGER,
     },
     {
       sequelize,

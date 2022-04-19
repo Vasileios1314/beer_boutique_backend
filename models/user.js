@@ -13,7 +13,11 @@ module.exports = (sequelize, DataTypes) => {
       user.hasOne(models.business);
       user.hasMany(models.comment);
       user.hasMany(models.rating);
-      user.hasMany(models.userattendance);
+      user.belongsToMany(models.event, {
+        through: "userattendance",
+        foreignKey: "userId",
+      });
+      // user.hasMany(models.userattendance);
     }
   }
   user.init(

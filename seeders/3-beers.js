@@ -12,7 +12,7 @@ module.exports = {
           imageUrl:
             "http://irishpubchallenge.com/wp-content/uploads/2013/01/guinness.jpg",
           businessId: 1,
-          category_id: 1,
+          categoryId: 1,
           alcohoolRate: 5,
           size: 250,
           country: "Irland",
@@ -26,7 +26,7 @@ module.exports = {
           imageUrl:
             "http://www.beertown.net/images/catalog_images/1384229884.jpg",
           businessId: 1,
-          category_id: 1,
+          categoryId: 1,
           alcohoolRate: 5,
           size: 250,
           country: "Belgium",
@@ -40,7 +40,7 @@ module.exports = {
           imageUrl:
             "http://static.rcgroups.net/forums/attachments/7/2/0/9/9/a1611226-110-singha.136161615_std%5B1%5D.png?d=1197493537",
           businessId: 1,
-          category_id: 1,
+          categoryId: 1,
           alcohoolRate: 5,
           size: 250,
           country: "Thailand",
@@ -54,7 +54,7 @@ module.exports = {
           imageUrl:
             "http://www.adweek.com/agencyspy/files/original/stella-artois-bottle.jpg",
           businessId: 2,
-          category_id: 3,
+          categoryId: 3,
           alcohoolRate: 5,
           size: 250,
           country: "Belgium",
@@ -67,7 +67,7 @@ module.exports = {
           description: "Sint quis ",
           imageUrl: "http://www.femail.com.au/graphics/changbeer1.jpg",
           businessId: 2,
-          category_id: 1,
+          categoryId: 1,
           alcohoolRate: 5,
           size: 250,
           country: "Thailand",
@@ -81,7 +81,7 @@ module.exports = {
           imageUrl:
             "http://www.cherokeedistributing.com/wp-content/uploads/2012/02/Steel-Reserve.jpg",
           businessId: 2,
-          category_id: 1,
+          categoryId: 1,
           alcohoolRate: 5,
           size: 250,
           country: "US",
@@ -95,7 +95,7 @@ module.exports = {
           imageUrl:
             "https://www.affligembeer.com/media/1301/affligem-blond-fles-en-glas-900x900px.png?quality=75",
           businessId: 3,
-          category_id: 1,
+          categoryId: 1,
           alcohoolRate: 5,
           size: 250,
           country: "Belgium",
@@ -109,7 +109,7 @@ module.exports = {
           imageUrl:
             "https://www.affligembeer.com/media/1303/affligem-dubbel-fles-en-glas-900x900px.png?quality=75",
           businessId: 3,
-          category_id: 2,
+          categoryId: 2,
           alcohoolRate: 5,
           size: 250,
           country: "Belgium",
@@ -123,7 +123,7 @@ module.exports = {
           imageUrl:
             "https://www.sligro.nl/image-service/_jcr_content.product.08712000048433.image/1/large.jpeg",
           businessId: 3,
-          category_id: 3,
+          categoryId: 3,
           alcohoolRate: 5,
           size: 250,
           country: "Belgium",
@@ -136,7 +136,7 @@ module.exports = {
           description: "Sint quis ",
           imageUrl: "https://chimay.com/chimay-rouge/build/img/home-intro.jpg",
           businessId: 4,
-          category_id: 2,
+          categoryId: 2,
           alcohoolRate: 5,
           size: 250,
           country: "Irland",
@@ -150,7 +150,7 @@ module.exports = {
           imageUrl:
             "https://static.ah.nl/dam/product/AHI_43545239353733343835?revLabel=22&rendition=800x800_JPG_Q90&fileType=binary",
           businessId: 4,
-          category_id: 3,
+          categoryId: 3,
           alcohoolRate: 5,
           size: 250,
           country: "Irland",
@@ -164,7 +164,7 @@ module.exports = {
           imageUrl:
             "https://www.biernet.nl/images/merken/77043-Chimay%20Tripel%20met%20een%20kaasje%20ernaast.jpg",
           businessId: 4,
-          category_id: 3,
+          categoryId: 3,
           alcohoolRate: 5,
           size: 250,
           country: "Irland",
@@ -178,7 +178,7 @@ module.exports = {
           imageUrl:
             "https://cdn.webshopapp.com/shops/65337/files/84613613/trappistes-rochefort-6.jpg",
           businessId: 5,
-          category_id: 3,
+          categoryId: 3,
           alcohoolRate: 5,
           size: 250,
           country: "Irland",
@@ -192,7 +192,7 @@ module.exports = {
           imageUrl:
             "https://cdn.webshopapp.com/shops/65337/files/84613574/trappistes-rochefort-8.jpg",
           businessId: 5,
-          category_id: 2,
+          categoryId: 2,
           alcohoolRate: 5,
           size: 250,
           country: "Irland",
@@ -206,7 +206,7 @@ module.exports = {
           imageUrl:
             "https://beerstorexl.com/wp-content/uploads/2020/04/23290_rochefort_10_33cl.png",
           businessId: 5,
-          category_id: 2,
+          categoryId: 2,
           alcohoolRate: 5,
           size: 250,
           country: "Irland",

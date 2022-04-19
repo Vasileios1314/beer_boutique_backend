@@ -10,8 +10,10 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       event.belongsTo(models.business);
-      event.hasOne(models.business);
-      event.hasMany(models.userattendance);
+      event.belongsToMany(models.user, {
+        through: "userattendance",
+        foreignKey: "eventId",
+      });
     }
   }
   event.init(
@@ -23,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
       end_date: { type: DataTypes.DATE, allowNull: false },
       capacity: { type: DataTypes.INTEGER, allowNull: false },
       location: { type: DataTypes.STRING, allowNull: false },
-      business_id: DataTypes.INTEGER,
+      businessId: DataTypes.INTEGER,
     },
     {
       sequelize,
