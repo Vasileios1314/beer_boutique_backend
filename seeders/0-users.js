@@ -8,7 +8,6 @@ module.exports = {
       "users",
       [
         {
-          id: 1,
           name: "testuser",
           email: "test@test.com",
           password: bcrypt.hashSync("test1234", SALT_ROUNDS),
@@ -19,7 +18,6 @@ module.exports = {
           isBusiness: true,
         },
         {
-          id: 2,
           name: "dummy",
           email: "a@a.com",
           password: bcrypt.hashSync("a", SALT_ROUNDS),
@@ -30,7 +28,6 @@ module.exports = {
           isBusiness: true,
         },
         {
-          id: 3,
           name: "dum",
           email: "dum@d.com",
           password: bcrypt.hashSync("dum1234", SALT_ROUNDS),
@@ -41,7 +38,6 @@ module.exports = {
           isBusiness: false,
         },
         {
-          id: 4,
           name: "bill",
           email: "bill@b.com",
           password: bcrypt.hashSync("1234", SALT_ROUNDS),

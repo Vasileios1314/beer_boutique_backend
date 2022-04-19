@@ -6,7 +6,6 @@ module.exports = {
       "beers",
       [
         {
-          id: 1,
           title: "Guinness",
           description: "Sint quis ",
           imageUrl:
@@ -20,7 +19,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 2,
           title: "Hoegarden",
           description: "Sint quis ",
           imageUrl:
@@ -34,7 +32,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 3,
           title: "Singha",
           description: "Sint quis ",
           imageUrl:
@@ -48,7 +45,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 4,
           title: "Stella Artois",
           description: "Sint quis ",
           imageUrl:
@@ -62,7 +58,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 5,
           title: "Chang",
           description: "Sint quis ",
           imageUrl: "http://www.femail.com.au/graphics/changbeer1.jpg",
@@ -75,7 +70,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 6,
           title: "Steel Reserve",
           description: "Sint quis ",
           imageUrl:
@@ -89,7 +83,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 7,
           title: "Affligem Blonde",
           description: "Sint quis ",
           imageUrl:
@@ -103,7 +96,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 8,
           title: "Affligem Dubbel",
           description: "Sint quis ",
           imageUrl:
@@ -117,7 +109,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 9,
           title: "Affligem Tripel",
           description: "Sint quis ",
           imageUrl:
@@ -131,7 +122,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 10,
           title: "Chimay Rouge",
           description: "Sint quis ",
           imageUrl: "https://chimay.com/chimay-rouge/build/img/home-intro.jpg",
@@ -144,7 +134,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 11,
           title: "St Bernardus Abt 12",
           description: "Sint quis ",
           imageUrl:
@@ -158,7 +147,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 12,
           title: "Chimay Tripel",
           description: "Sint quis ",
           imageUrl:
@@ -172,7 +160,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 13,
           title: "Rochefort 6",
           description: "Sint quis ",
           imageUrl:
@@ -186,7 +173,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 14,
           title: "Rochefort 8",
           description: "Sint quis ",
           imageUrl:
@@ -200,7 +186,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 15,
           title: "Rochefort 10",
           description: "Sint quis ",
           imageUrl:

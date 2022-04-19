@@ -6,7 +6,6 @@ module.exports = {
       "events",
       [
         {
-          id: 1,
           title:
             "Reprehenderit qui duis sunt ad veniam excepteur incididunt nulla.",
           imageUrl:
@@ -21,7 +20,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 2,
           title:
             "Reprehenderit qui duis sunt ad veniam excepteur incididunt nulla.",
           imageUrl:
@@ -36,7 +34,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 3,
           title:
             "Reprehenderit qui duis sunt ad veniam excepteur incididunt nulla.",
           imageUrl:

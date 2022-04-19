@@ -13,8 +13,8 @@ const router = new Router();
 
 router.get("/", async (req, res) => {
   try {
-    const events = await Business.findAll({
-      include: [Events, { model: Beer, include: [Comments, Rating] }],
+    const events = await Events.findAll({
+      include: [Business],
     });
     res.send(events);
   } catch (e) {
@@ -23,3 +23,14 @@ router.get("/", async (req, res) => {
 });
 
 module.exports = router;
+
+// router.get("/", async (req, res) => {
+//   try {
+//     const events = await Business.findAll({
+//       include: [Events, { model: Beer, include: [Comments, Rating] }],
+//     });
+//     res.send(events);
+//   } catch (e) {
+//     console.log(e.message);
+//   }
+// });

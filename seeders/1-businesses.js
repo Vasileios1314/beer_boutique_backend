@@ -6,7 +6,6 @@ module.exports = {
       "businesses",
       [
         {
-          id: 1,
           title: "John Doe",
           description: "Eu cillum velit dolor velit aute aliqua.",
           imageUrl:
@@ -16,7 +15,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 2,
           title: "Doe",
           description: "Eu cillum velit dolor velit aute aliqua.",
           imageUrl:
@@ -26,7 +24,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 3,
           title: "John",
           description: "Eu cillum velit dolor velit aute aliqua.",
           imageUrl:
@@ -36,7 +33,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 4,
           title: "Fabrikque",
           description: "Eu cillum velit dolor velit aute aliqua.",
           imageUrl:
@@ -46,7 +42,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          id: 5,
           title: "Beer Bar",
           description: "Eu cillum velit dolor velit aute aliqua.",
           imageUrl:
