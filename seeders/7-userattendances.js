@@ -6,19 +6,16 @@ module.exports = {
       "userattendances",
       [
         {
-          userId: 1,
           eventId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          userId: 2,
           eventId: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          userId: 1,
           eventId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),

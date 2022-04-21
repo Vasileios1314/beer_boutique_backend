@@ -9,7 +9,7 @@ module.exports = {
           title: "Guinness",
           description: "Sint quis ",
           imageUrl:
-            "http://irishpubchallenge.com/wp-content/uploads/2013/01/guinness.jpg",
+            "https://cdn.webshopapp.com/shops/133932/files/359227862/guinness-foreign-extra-stout-75-330ml.jpg",
           businessId: 1,
           categoryId: 1,
           alcohoolRate: 5,
@@ -22,7 +22,7 @@ module.exports = {
           title: "Hoegarden",
           description: "Sint quis ",
           imageUrl:
-            "http://www.beertown.net/images/catalog_images/1384229884.jpg",
+            "https://www.bigbasket.com/media/uploads/p/l/40201232_3-hoegaarden-beer.jpg",
           businessId: 1,
           categoryId: 1,
           alcohoolRate: 5,
@@ -48,7 +48,7 @@ module.exports = {
           title: "Stella Artois",
           description: "Sint quis ",
           imageUrl:
-            "http://www.adweek.com/agencyspy/files/original/stella-artois-bottle.jpg",
+            "https://www.eckeroline.com/media/catalog/product/cache/c6a153240b9d57769ada9a8b348b002a/s/t/stella_artois_33cl_34223.png",
           businessId: 2,
           categoryId: 3,
           alcohoolRate: 5,
@@ -73,7 +73,7 @@ module.exports = {
           title: "Steel Reserve",
           description: "Sint quis ",
           imageUrl:
-            "http://www.cherokeedistributing.com/wp-content/uploads/2012/02/Steel-Reserve.jpg",
+            "https://images.contentstack.io/v3/assets/bltbb619fd5c667ba2d/blt05f4c3d3a72c939f/60a2ca47ae6c8a6e290a5699/Steel_Reserve_bottle_1800x1800_transparent.png",
           businessId: 2,
           categoryId: 1,
           alcohoolRate: 5,

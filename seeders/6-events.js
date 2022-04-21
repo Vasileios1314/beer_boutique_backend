@@ -6,8 +6,7 @@ module.exports = {
       "events",
       [
         {
-          title:
-            "Reprehenderit qui duis sunt ad veniam excepteur incididunt nulla.",
+          title: "The best tasting in the city.",
           imageUrl:
             "https://wynz.nl/wp-content/uploads/2019/11/wijnfeest-min.jpg",
           description: "Pariatur nostrud laboris eu id minim exercitation.",
@@ -20,8 +19,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          title:
-            "Reprehenderit qui duis sunt ad veniam excepteur incididunt nulla.",
+          title: "True tasting EXP",
           imageUrl:
             "https://weedseedshop.com/blog/wp-content/uploads/10-best-strains-for-parties-and-socializing-WeedSeedShop-1-1024x540.jpg",
           description: "Pariatur nostrud laboris eu id minim exercitation.",
@@ -34,8 +32,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          title:
-            "Reprehenderit qui duis sunt ad veniam excepteur incididunt nulla.",
+          title: "Come for the Party!",
           imageUrl:
             "https://www.buitenplaatsvlaardingen.nl/buitenplaats2017/wp-content/uploads/2014/08/feest-vieren-vlaardingen.jpg",
           description: "Pariatur nostrud laboris eu id minim exercitation.",

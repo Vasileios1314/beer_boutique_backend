@@ -28,6 +28,36 @@ module.exports = {
           isBusiness: true,
         },
         {
+          name: "Mopie ",
+          email: "mo@a.com",
+          password: bcrypt.hashSync("a", SALT_ROUNDS),
+          imageUrl:
+            "https://static.stacker.com/s3fs-public/styles/sar_screen_maximum_large/s3/croppedGettyImages6957135006XDLjpg_0.JPEG",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+          isBusiness: true,
+        },
+        {
+          name: "Las",
+          email: "mea@a.com",
+          password: bcrypt.hashSync("a", SALT_ROUNDS),
+          imageUrl:
+            "https://i.insider.com/5cc865c7a9224302f54ed4b2?width=750&format=jpeg&auto=webp",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+          isBusiness: true,
+        },
+        {
+          name: "Korie",
+          email: "kor@a.com",
+          password: bcrypt.hashSync("a", SALT_ROUNDS),
+          imageUrl:
+            "https://www.mrdustbin.com/us/wp-content/uploads/2021/11/Tom-Holland.jpg",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+          isBusiness: true,
+        },
+        {
           name: "dum",
           email: "dum@d.com",
           password: bcrypt.hashSync("dum1234", SALT_ROUNDS),

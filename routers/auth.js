@@ -40,7 +40,6 @@ router.post("/login", async (req, res, next) => {
 });
 
 router.post("/signup", async (req, res) => {
-  // const { email, password, name, imageUrl, isBusiness } = req.body;
   const { user, business } = req.body;
 
   const { email, password, name, imageUrl, isBusiness } = user;

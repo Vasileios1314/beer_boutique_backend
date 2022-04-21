@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       beer.hasMany(models.rating);
       beer.hasMany(models.comment);
       beer.belongsTo(models.category);
-      beer.hasOne(models.category);
+      // beer.hasOne(models.category);
     }
   }
   beer.init(
