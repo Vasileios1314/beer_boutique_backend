@@ -37,4 +37,29 @@ router.get("/:id", async (req, res, next) => {
   }
 });
 
+router.post("/attend", auth, async (req, res, next) => {
+  try {
+    const { userId, eventId } = req.body;
+    const attend = await Userattendance.create({
+      userId,
+      eventId,
+    });
+    res.send(attend);
+  } catch (e) {
+    next(e);
+  }
+});
+
+router.delete("/unsubscribe/:eventId", async (req, res, next) => {
+  try {
+    const { eventId } = req.params;
+    const unsubscribe = await Userattendance.destroy({
+      where: { eventId },
+    });
+    res.send("unsubscribe");
+  } catch (e) {
+    next(e);
+  }
+});
+
 module.exports = router;

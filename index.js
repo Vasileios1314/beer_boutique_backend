@@ -6,6 +6,7 @@ const authRouter = require("./routers/auth");
 const { PORT } = require("./config/constants");
 const eventRouter = require("./routers/event");
 const businessRouter = require("./routers/business");
+const customerRouter = require("./routers/customer");
 
 // Create an express app
 const app = express();
@@ -36,6 +37,7 @@ app.use(bodyParserMiddleWare);
 app.use("/auth", authRouter);
 app.use("/event", eventRouter);
 app.use("/business", businessRouter);
+app.use("/customer", customerRouter);
 // POST endpoint which requires a token for testing purposes, can be removed
 app.post("/authorized_post_request", authMiddleWare, (req, res) => {
   // accessing user that was added to req by the auth middleware
