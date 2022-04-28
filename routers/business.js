@@ -12,8 +12,9 @@ const router = new Router();
 
 router.get("/:id", async (req, res) => {
   try {
-    const businessId = parseInt(req.params.id);
-    const business = await Business.findByPk(businessId, {
+    const userId = parseInt(req.params.id);
+    const business = await Business.findOne({
+      where: { id: userId },
       include: [
         Events,
         {
@@ -23,18 +24,6 @@ router.get("/:id", async (req, res) => {
       ],
     });
     if (!business) return res.status(400).send("business not found");
-    // TODO: get the average from DB instead of ratings and then calculate average...
-
-    const addRatingToBeer = (beer) => {
-      const averageRating =
-        beer.ratings.reduce((a, b) => a + b.rating, 0) / beer.ratings.length;
-
-      beer.dataValues.averageRating = averageRating;
-    };
-
-    business.beers.forEach((beer) => {
-      addRatingToBeer(beer);
-    });
 
     res.send(business);
   } catch (e) {
@@ -141,35 +130,15 @@ router.post("/comment/:beerId", auth, async (req, res) => {
   }
 });
 
-router.post("/rating/:beerId", auth, async (req, res) => {
+router.delete("/deleteevent/:eventId", auth, async (req, res, next) => {
   try {
-    const { beerId } = req.params;
-    const { rating } = req.body;
-    const { id } = req.user;
-
-    const ratings = [1, 2, 3, 4, 5];
-    if (!rating || !ratings.includes(rating))
-      return res.status(400).send("Rating has to be 1-5");
-
-    const beer = await Beer.findByPk(beerId);
-
-    if (!beer) return res.status(400).send("Beer does not exist");
-
-    // check if user has already rating for this beer.
-    // if it does, return error (new rating will NOT be created)
-    const userRating = await Rating.findOne({ where: { userId: id } });
-    console.log("userRating", userRating.dataValues);
-    if (userRating) return res.status(400).send("rating already existest");
-
-    const newRating = await Rating.create({
-      rating,
-      beerId,
-      userId: id,
+    const { eventId } = req.params;
+    await Events.destroy({
+      where: { id: eventId },
     });
-
-    return res.status(201).send({ message: "Rating created", newRating });
+    res.send("Event deleted");
   } catch (e) {
-    console.log(e.message);
+    next(e);
   }
 });
 
