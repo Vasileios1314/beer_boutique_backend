@@ -1,5 +1,5 @@
 const express = require("express");
-const corsMiddleWare = require("cors");
+const cors = require("cors");
 // Auth middleware: our own code. Checks for the existence of a token in a header called `authentication`.
 const authMiddleWare = require("./auth/middleware");
 const authRouter = require("./routers/auth");
@@ -22,7 +22,7 @@ const app = express();
 // CORS middleware:  * Since our api is hosted on a different domain than our client
 // we are are doing "Cross Origin Resource Sharing" (cors)
 // Cross origin resource sharing is disabled by express by default
-app.use(corsMiddleWare());
+app.use(cors());
 
 // express.json():be able to read request bodies of JSON requests a.k.a. body-parser
 const bodyParserMiddleWare = express.json();
