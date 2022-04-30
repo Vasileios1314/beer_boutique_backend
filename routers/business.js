@@ -32,6 +32,7 @@ router.get("/:id", async (req, res) => {
 });
 
 router.post("/beer", auth, async (req, res) => {
+  console.log("in endpoint");
   try {
     const {
       title,
@@ -48,6 +49,17 @@ router.post("/beer", auth, async (req, res) => {
     const findUserBusiness = await Business.findOne({
       where: { userId: userId },
     });
+
+    if (
+      !title ||
+      !imageUrl ||
+      !description ||
+      !category ||
+      !alcohoolRate ||
+      !size ||
+      !country
+    )
+      return res.status(400).send("Please complete all the inputs!");
 
     const response = await Beer.create({
       title,
@@ -83,6 +95,17 @@ router.post("/postEvent", auth, async (req, res) => {
     const business = await Business.findOne({
       where: { userId: userId },
     });
+
+    if (
+      !title ||
+      !imageUrl ||
+      !description ||
+      !start_date ||
+      !end_date ||
+      !capacity ||
+      !location
+    )
+      return res.status(400).send("Please complete all the inputs!");
 
     if (!business)
       return res.status(400).send("This user is not the owner of the business");
@@ -130,7 +153,7 @@ router.post("/comment/:beerId", auth, async (req, res) => {
   }
 });
 
-router.delete("/deleteevent/:eventId", auth, async (req, res, next) => {
+router.delete("/deleteevent/:eventId", async (req, res, next) => {
   try {
     const { eventId } = req.params;
     await Events.destroy({

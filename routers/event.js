@@ -44,7 +44,7 @@ router.post("/attend", auth, async (req, res, next) => {
       userId,
       eventId,
     });
-    res.send(attend);
+    res.send({ attend });
   } catch (e) {
     next(e);
   }
