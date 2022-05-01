@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
       title: { type: DataTypes.STRING, allowNull: false },
       description: { type: DataTypes.STRING(1000), allowNull: false },
       imageUrl: { type: DataTypes.STRING, allowNull: false },
+      likes: { type: DataTypes.INTEGER, allowNull: false },
       businessId: DataTypes.INTEGER,
       categoryId: DataTypes.INTEGER,
       alcohoolRate: { type: DataTypes.INTEGER, allowNull: false },

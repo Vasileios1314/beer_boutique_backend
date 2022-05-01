@@ -6,80 +6,70 @@ module.exports = {
       "comments",
       [
         {
-          comment:
-            "Aliquip et irure voluptate in voluptate cupidatat in sunt excepteur ad esse deserunt adipisicing.",
-          beerId: 1,
+          comment: "Fantastic",
+          beerId: 7,
           userId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          comment:
-            "Aliquip et irure voluptate in voluptate cupidatat in sunt excepteur ad esse deserunt adipisicing.",
+          comment: "Wow",
+          beerId: 13,
+          userId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          comment: "10/10",
+          beerId: 11,
+          userId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          comment: "The taste was super nice.",
+          beerId: 10,
+          userId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          comment: "Dum flavor...",
+          beerId: 8,
+          userId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          comment: "can be better..",
+          beerId: 9,
+          userId: 2,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          comment: "Was rediculous.",
           beerId: 4,
           userId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          comment:
-            "Aliquip et irure voluptate in voluptate cupidatat in sunt excepteur ad esse deserunt adipisicing.",
-          beerId: 3,
-          userId: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          comment:
-            "Aliquip et irure voluptate in voluptate cupidatat in sunt excepteur ad esse deserunt adipisicing.",
-          beerId: 2,
-          userId: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          comment:
-            "Aliquip et irure voluptate in voluptate cupidatat in sunt excepteur ad esse deserunt adipisicing.",
-          beerId: 1,
-          userId: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          comment:
-            "Aliquip et irure voluptate in voluptate cupidatat in sunt excepteur ad esse deserunt adipisicing.",
-          beerId: 3,
-          userId: 2,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          comment:
-            "Aliquip et irure voluptate in voluptate cupidatat in sunt excepteur ad esse deserunt adipisicing.",
-          beerId: 4,
-          userId: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          comment:
-            "Aliquip et irure voluptate in voluptate cupidatat in sunt excepteur ad esse deserunt adipisicing.",
+          comment: "Check!!",
           beerId: 1,
           userId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          comment:
-            "Aliquip et irure voluptate in voluptate cupidatat in sunt excepteur ad esse deserunt adipisicing.",
+          comment: "One more drunk night!",
           beerId: 1,
           userId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          comment:
-            "Aliquip et irure voluptate in voluptate cupidatat in sunt excepteur ad esse deserunt adipisicing.",
+          comment: "Nice!",
           beerId: 3,
           userId: 1,
           createdAt: new Date(),

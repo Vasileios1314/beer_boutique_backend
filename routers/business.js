@@ -42,6 +42,7 @@ router.post("/beer", auth, async (req, res) => {
       alcohoolRate,
       size,
       country,
+      likes,
     } = req.body;
 
     const userId = req.user.id;
@@ -70,6 +71,7 @@ router.post("/beer", auth, async (req, res) => {
       alcohoolRate,
       size,
       categoryId: category,
+      likes: 0,
     });
 
     return res.status(201).send({ message: "Beer created", response });
@@ -160,6 +162,32 @@ router.delete("/deleteevent/:eventId", async (req, res, next) => {
       where: { id: eventId },
     });
     res.send("Event deleted");
+  } catch (e) {
+    next(e);
+  }
+});
+
+router.patch("/beer/:id", auth, async (req, res) => {
+  try {
+    const beerLikes = await Beer.findByPk(req.params.id);
+
+    const { likes } = req.body;
+
+    await beerLikes.update({ likes });
+
+    return res.status(200).send({ beerLikes });
+  } catch (err) {
+    console.log(err.message);
+  }
+});
+
+router.delete("/deletebeer/:beerId", async (req, res, next) => {
+  try {
+    const { beerId } = req.params;
+    await Beer.destroy({
+      where: { id: beerId },
+    });
+    res.send("Beer deleted");
   } catch (e) {
     next(e);
   }

@@ -40,6 +40,8 @@ router.get("/:id", async (req, res, next) => {
 router.post("/attend", auth, async (req, res, next) => {
   try {
     const { userId, eventId } = req.body;
+    console.log("userId", "eventId", userId, eventId);
+
     const attend = await Userattendance.create({
       userId,
       eventId,
