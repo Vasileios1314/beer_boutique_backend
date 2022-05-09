@@ -31,8 +31,17 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+router.get("/", async (req, res) => {
+  try {
+    const business = await Business.findAll();
+
+    res.send(business);
+  } catch (e) {
+    console.log(e.message);
+  }
+});
+
 router.post("/beer", auth, async (req, res) => {
-  console.log("in endpoint");
   try {
     const {
       title,
